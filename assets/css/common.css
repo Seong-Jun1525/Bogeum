@@ -3,26 +3,74 @@
 /* Layout */
 header {
     width: 100%; position: relative;
-    background: url('../img/header-bg.png') center no-repeat;
-    background-size: cover;
+    /* background: url(../img/header-bg01.jpg) no-repeat -3px;
+    background-size: cover; */
 }
-header:before {
+/* header:before {
     content: ''; position: absolute; left: 0; top: 0;
-    width: 100%; height: 100%;background: rgba(0,0,0,0.3);
-}
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+} */
 nav {
-    width: 100%; height: 70px; border-top: 1px solid #666;
+    width: 100%; height: 70px; border-top: 1px solid goldenrod;
 }
 #banner {
-    width: 100%; height: 600px; background: #444;
-}
-#contents {
-    width: 100%; height: 1100px; background: #222;
-}
-footer {
-    width: 100%; height: 300px; background: #111;
+    margin-bottom: 0;
 }
 
+main {
+    --color-title: #000;
+    --color-sub: #000;
+    --color-link: #000;
+    --font-family: 'Noto Sans KR', sans-serif;
+    --aspect-ratio: 33/17;
+    --image-width-max: 500px;
+
+    font-family: var(--font-family);
+    color: var(--color-title);
+}
+
+.btn {
+    width: 130px; padding: 10px; border: 2px solid #333;
+    border-radius: 4px; color: #333; font-size: 16px; font-weight: 700;
+    text-align: center; cursor: pointer; box-sizing: border-box; display: block;
+    transition: 0.4s;
+}
+.btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+.btn.btn--reverse {
+    background-color: #333;
+    color: #fff;
+}
+.btn.btn--reverse:hover {
+    background-color: transparent; color: #333;
+}
+.btn.btn--brown {
+    color: #592B18;
+    border-color: #592B18;
+}
+.btn.btn--brown:hover {
+    color: #fff;
+    border-color: #592B18;
+}
+.btn.btn--gold {
+    color: #d9aa8a;
+    border-color: #d9aa8a;
+}
+.btn.btn--gold {
+    color: #fff;
+    border-color: #d9aa8a;
+}
+.btn.btn--white {
+    color: #fff;
+    border-color: #fff;
+}
+.btn.btn--white:hover {
+    color: #333;
+    border-color: #fff;
+}
 
 /* container */
 .container {
@@ -38,11 +86,11 @@ footer {
 }
 .quick a {
     position: relative; z-index: 10; padding: 8px 0 0 0; 
-    margin-left: 10px; display: inline-block; color: #fff;
+    margin-left: 10px; display: inline-block; color: #000;
 }
 .quick a:before {
     content: ''; position: absolute; left: 0; bottom: 0;
-    width: 100%; height: 1px;  background:#fff;
+    width: 100%; height: 1px;  background:goldenrod;
     transform: scaleX(0); transition: transform .25s ease-in-out;
 }
 .quick a:hover:before  {
@@ -51,7 +99,7 @@ footer {
 
 /* title */
 .title {
-    position: relative; color: #fff; z-index: 10; text-align: center;
+    position: relative; color: #000; z-index: 10; text-align: center;
     margin-top: 70px;
 }
 .title h1 {
@@ -59,19 +107,19 @@ footer {
     display: inline-block; padding: 6px 40px 5px 40px;
 }
 .title a {
-    color: #fff; font-size: 18px; display: inline-block;
-    background: rgba(0,0,0,0.6); padding: 6px 20px; margin-top: 2px;
+    color: #000; font-size: 18px; display: inline-block;
+    padding: 6px 20px; margin-top: 2px;
     transition: all 0.35s ease; border-radius: 10px;
 }
 .title a:hover {  
 	box-shadow: 
-			0 0 0 2px rgba(139,195,74,0.2) inset,
-			0 0 0 4px rgba(139,195,74,0.2) inset,
-			0 0 0 6px rgba(139,195,74,0.2) inset,
-			0 0 0 8px rgba(139,195,74,0.2) inset,
-			0 0 0 10px rgba(139,195,74,0.2) inset,
-			0 0 0 12px rgba(139,195,74,0.2) inset,
-			0 0 0 14px rgba(139,195,74,0.2) inset;
+			0 0 0 2px lightyellow inset,
+			0 0 0 4px goldenrod inset,
+			0 0 0 6px lightyellow inset,
+			0 0 0 8px goldenrod inset,
+			0 0 0 10px lightyellow inset,
+			0 0 0 12px goldenrod inset,
+			0 0 0 14px lightyellow inset;
 }
 
 /* icon */
@@ -82,8 +130,8 @@ footer {
 .icon li {
     display: inline; margin: 0 2px;}
 .icon li a {
-    position: relative; color: #fff; width: 66px; height: 66px; 
-	background: rgba(0,0,0,0.5); border-radius: 50%; display: inline-block; 
+    position: relative; color: goldenrod; width: 66px; height: 66px; 
+	background: rgba(251, 255, 0, 0.5); border-radius: 50%; display: inline-block; 
 	transition: all 0.35s ease;
 }
 .icon li a i {
@@ -91,12 +139,12 @@ footer {
 }
 .icon li a span {
     opacity: 0; position: absolute; left: 50%; top: -40px; transform: translateX(-50%); 
-	background: rgba(139,195,74,0.7); padding: 3px 10px;
+	background: gold; padding: 3px 10px;
     display: block; border-radius: 6px 0; transition: all 0.35s ease;
 }
 .icon li a span:before {
     content: ''; position: absolute; left: 50%; bottom: -5px; margin-left: -5px;
-	border-top: 5px solid rgba(139,195,74,0.7);
+	border-top: 5px solid gold;
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
 }
@@ -104,8 +152,160 @@ footer {
     opacity: 1; top: -30px;
 }
 .icon li a:hover {
-	box-shadow: 0 0 0 3px rgba(139,195,74,0.7) inset;
-	background: rgba(0,0,0,0.3);
+	box-shadow: goldenrod inset;
+	background: gold;
 }
 
 /* // header  */
+
+/* footer */
+footer {
+    padding: 0 40px 100px; display: block;
+}
+
+footer .footer-wrap{
+    align-items: center; text-align: center;
+}
+
+footer .footer-logo {
+    margin-bottom: 30px; position: relative; text-align: center;
+}
+
+footer .footer-logo:before,
+footer .footer-logo:after {
+    content: "";
+    width: calc(33.333333% - 40px);
+    height: 1px;
+    background: goldenrod;
+    position: absolute;
+    display: block;
+    top: 70%;
+    margin-top: -.8125rem;
+}
+
+footer .footer-logo:before {
+    left: 0;
+    transform-origin: right center;
+}
+
+footer .footer-logo:after {
+    right: 0;
+    transform-origin: left center;
+}
+
+footer .footer-logo a {
+    width: 200px; height: 46px; display: inline-block;
+}
+
+footer .footer-logo a h3 {
+    font-size: 30px;
+}
+
+footer .sub-container {
+    position: relative; letter-spacing: normal;
+    font-size: 0; width: 100%; display: flex;
+}
+
+footer .sub-container .footer-menu {
+    width: 30%;
+    vertical-align: top;
+    font-size: 1rem;
+    display: inline-block;
+    text-align: center;
+}
+
+footer .customer , footer .location {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+footer .sub-container .admin {
+    width: 40%;
+}
+
+.admin .footer-social {
+    text-align: center;
+}
+.admin .footer-social .footer-social-list {
+    margin-bottom: 20px;
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 1.875rem;
+}
+
+.admin .footer-social .footer-social-list .footer-social-item {
+    display: inline-block;
+    margin: 0 11%;
+}
+.admin .footer-social .footer-social-list .footer-social-item a i {
+    width: 2.5rem; height: 2.5rem; font-size: 35px; color: goldenrod;
+}
+
+.admin .footer-admin {
+    margin-bottom: 3.375rem;
+}
+
+.admin .footer-admin .footer-admin-title {
+    font-family: Roboto,sans-serif; text-align: center;
+    font-weight: 500; font-size: 16px;
+    position: relative; display: block;
+    text-transform: uppercase;
+    padding-top: 5.25rem;
+    margin-bottom: 1.875rem;
+}
+
+.admin .footer-admin .footer-admin-title:before {
+    position: absolute;
+    width: 1px;
+    top: 0;
+    left: 50%;
+    background: goldenrod;
+    content: "";
+    height: 3.625rem;
+}
+
+.admin .footer-admin .subscribe {
+    width: 100%;
+    position: relative;
+}
+
+.subscribe input {
+    text-align: center; height: 3.125rem;
+    border-bottom: 0; box-sizing: border-box;
+    font-size: .625rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    border: 1px solid goldenrod;
+    color: #000; width: 100%;
+    background: #fff;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.subscribe button {
+    width: 100%; height: 3.125rem;
+    padding: 1.125rem 1.75rem; font-size: .625rem;
+    display: inline-block;
+    border: 1px solid goldenrod;
+    background: 0 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    min-height: 50px;
+    color: #000;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    background: #fff;
+    transition: color .7s ease;
+}
+
+.subscribe button:hover {
+    background: lightyellow;
+    color: #000;
+}
+
