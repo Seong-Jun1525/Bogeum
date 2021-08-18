@@ -31,4 +31,7 @@ $(window).scroll(function(){
     if(scrollTop > $("#adoption").offset().top) {
         $("#adoption").addClass("show");
     }
+    if(scrollTop > $("footer").offset().top) {
+        $("footer").addClass("show");
+    }
 });

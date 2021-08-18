@@ -163,7 +163,7 @@ footer {
     padding: 0 40px 100px; display: block;
 }
 
-footer .footer-wrap{
+footer .footer-wrap {
     align-items: center; text-align: center;
 }
 
@@ -179,8 +179,10 @@ footer .footer-logo:after {
     background: goldenrod;
     position: absolute;
     display: block;
-    top: 70%;
-    margin-top: -.8125rem;
+
+    transform: scale(0,1);
+
+    transition: transform .4s .2s cubic-bezier(.4, 0, .2, 1);
 }
 
 footer .footer-logo:before {
@@ -191,6 +193,13 @@ footer .footer-logo:before {
 footer .footer-logo:after {
     right: 0;
     transform-origin: left center;
+}
+
+footer.show .footer-logo:before,
+footer.show .footer-logo:after {
+    transform: scale(1,1);
+    top: 50%;
+    margin-top: -.8125rem;
 }
 
 footer .footer-logo a {
@@ -234,6 +243,18 @@ footer .sub-container .admin {
     padding: 0;
     list-style: none;
     margin-bottom: 1.875rem;
+    transition: transform .6s .2s cubic-bezier(.4, 0, .2, 1),
+    -webkit-transform .6s .2s cubic-bezier(.4, 0, .2, 1);
+    -webkit-transform: scale(1,0);
+    -ms-transform: scale(1,0);
+    transform: scale(1,0);
+    transform-origin: top center;
+}
+
+footer.show .admin .footer-social .footer-social-list {
+    -webkit-transform: scale(1,1);
+    -ms-transform: scale(1,1);
+    transform: scale(1,1);
 }
 
 .admin .footer-social .footer-social-list .footer-social-item {
@@ -265,6 +286,18 @@ footer .sub-container .admin {
     background: goldenrod;
     content: "";
     height: 3.625rem;
+    transition: transform .6s .2s cubic-bezier(.4, 0, .2, 1),
+    -webkit-transform .6s .2s cubic-bezier(.4, 0, .2, 1);
+    -webkit-transform: scale(1,0);
+    -ms-transform: scale(1,0);
+    transform: scale(1,0);
+    transform-origin: top center;
+}
+
+footer.show .admin .footer-admin .footer-admin-title:before {
+    -webkit-transform: scale(1,1);
+    -ms-transform: scale(1,1);
+    transform: scale(1,1);
 }
 
 .admin .footer-admin .subscribe {
@@ -308,4 +341,3 @@ footer .sub-container .admin {
     background: lightyellow;
     color: #000;
 }
-
