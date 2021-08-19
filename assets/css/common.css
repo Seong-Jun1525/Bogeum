@@ -14,9 +14,6 @@ header {
 nav {
     width: 100%; height: 70px; border-top: 1px solid goldenrod;
 }
-#banner {
-    margin-bottom: 0;
-}
 
 main {
     --color-title: #000;
@@ -30,47 +27,6 @@ main {
     color: var(--color-title);
 }
 
-.btn {
-    width: 130px; padding: 10px; border: 2px solid #333;
-    border-radius: 4px; color: #333; font-size: 16px; font-weight: 700;
-    text-align: center; cursor: pointer; box-sizing: border-box; display: block;
-    transition: 0.4s;
-}
-.btn:hover {
-    background-color: #333;
-    color: #fff;
-}
-.btn.btn--reverse {
-    background-color: #333;
-    color: #fff;
-}
-.btn.btn--reverse:hover {
-    background-color: transparent; color: #333;
-}
-.btn.btn--brown {
-    color: #592B18;
-    border-color: #592B18;
-}
-.btn.btn--brown:hover {
-    color: #fff;
-    border-color: #592B18;
-}
-.btn.btn--gold {
-    color: #d9aa8a;
-    border-color: #d9aa8a;
-}
-.btn.btn--gold {
-    color: #fff;
-    border-color: #d9aa8a;
-}
-.btn.btn--white {
-    color: #fff;
-    border-color: #fff;
-}
-.btn.btn--white:hover {
-    color: #333;
-    border-color: #fff;
-}
 
 /* container */
 .container {
@@ -97,21 +53,21 @@ main {
     transform: scaleX(1);
 }
 
-/* title */
-.title {
+/* header-title */
+.header-title {
     position: relative; color: #000; z-index: 10; text-align: center;
     margin-top: 70px;
 }
-.title h1 {
+.header-title h1 {
     margin-top: 0; font-size: 28px;
     display: inline-block; padding: 6px 40px 5px 40px;
 }
-.title a {
-    color: #000; font-size: 18px; display: inline-block;
+.header-title a {
+    color: #000; display: inline-block;
     padding: 6px 20px; margin-top: 2px;
     transition: all 0.35s ease; border-radius: 10px;
 }
-.title a:hover {  
+.header-title a:hover {  
 	box-shadow: 
 			0 0 0 2px lightyellow inset,
 			0 0 0 4px goldenrod inset,
@@ -128,7 +84,8 @@ main {
     padding-bottom: 30px;
 }
 .icon li {
-    display: inline; margin: 0 2px;}
+    display: inline; margin: 0 2px;
+}
 .icon li a {
     position: relative; color: goldenrod; width: 66px; height: 66px; 
 	background: rgba(251, 255, 0, 0.5); border-radius: 50%; display: inline-block; 
@@ -185,6 +142,13 @@ footer .footer-logo:after {
     transition: transform .4s .2s cubic-bezier(.4, 0, .2, 1);
 }
 
+footer.show .footer-logo:before,
+footer.show .footer-logo:after {
+    transform: scale(1,1);
+    top: 50%;
+    margin-top: -.8125rem;
+}
+
 footer .footer-logo:before {
     left: 0;
     transform-origin: right center;
@@ -193,13 +157,6 @@ footer .footer-logo:before {
 footer .footer-logo:after {
     right: 0;
     transform-origin: left center;
-}
-
-footer.show .footer-logo:before,
-footer.show .footer-logo:after {
-    transform: scale(1,1);
-    top: 50%;
-    margin-top: -.8125rem;
 }
 
 footer .footer-logo a {

@@ -10,7 +10,7 @@ $(document).ready(function(){
             }
         }]
     });
-    $('#adoption .container').slick({
+    $('#adoption .adoption-slide').slick({
         autoplay: true,
         autoplaySpeed: 3000,
         responsive: [{
