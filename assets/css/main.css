@@ -3,8 +3,8 @@
 /* nav */
 nav {
     width: 100%;
-    height: 70px;
     border-top: 1px solid goldenrod;
+    padding: 20px 0;
 }
 nav .menu {
     display: flex;
@@ -14,7 +14,6 @@ nav .menu {
 
 nav .menu li {
     width: 25%;
-    padding-top: 15px;
     position: relative;
 }
 
@@ -82,18 +81,27 @@ nav .menu .sub-menu li:first-child {
 
 /* banner */
 .banner-img1 {
-    background: url(../img/banner01.jpg) no-repeat center top;
+    background-image: url(../img/banner01.jpg);
+    background-repeat: no-repeat;
     height: 585px;
+    background-size: cover;
 }
 
 .banner-img2 {
-    background: url(../img/banner02.jpg) no-repeat center top;
-    height:585px;
+    background-image: url(../img/banner02.jpg);
+    background-repeat: no-repeat;
+    height: 585px;
+    background-size: cover;
 }
 
 .banner-img3 {
-    background: url(../img/banner03.jpg) no-repeat center top;
-    height:585px;
+    background-image: url(../img/banner03.jpg);
+    background-repeat: no-repeat;
+    height: 585px;
+    background-size: cover;
+}
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
 }
 
 /* contents */
@@ -186,12 +194,15 @@ nav .menu .sub-menu li:first-child {
 
 #intro .img01 {
     background: url("../img/intro-img01.jpg") no-repeat;
+    background-size: cover;
 }
 #intro .img02 {
     background: url("../img/intro-img02.jpg") no-repeat;
+    background-size: cover;
 }
 #intro .img03 {
     background: url("../img/intro-img03.jpg") no-repeat;
+    background-size: cover;
 }
 
 /* baby & story */
@@ -220,30 +231,55 @@ nav .menu .sub-menu li:first-child {
 
 .card-img01 {
     background-image: url(../img/대박.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .card-img02 {
     background-image: url(../img/하루.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .card-img03 {
     background-image: url(../img/통키.jpg);
+    background-position: 35%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .card-img04 {
     background-image: url(../img/사랑.jpg);
+    background-position: 35%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .card-img05 {
     background-image: url(../img/루팡.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .card-img06 {
     background-image: url(../img/온화.jpg);
+    background-position: 35%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .card-img07 {
-    background-image: url(../img/기쁨.jpg) ; 
+    background-image: url(../img/기쁨.jpg);
+    background-position: 90%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .card-img08 {
     background-image: url(../img/믿음.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .card-img09 {
     background-image: url(../img/평화.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .card a {
@@ -264,20 +300,23 @@ nav .menu .sub-menu li:first-child {
 }
 
 .adoption-img1 {
-    background: url(../img/adoption-img01.jpg) no-repeat center top;
-    left:10%;
+    background-image: url(../img/adoption-img01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
     height: 585px;
-    margin-bottom:0px;
 }
 .adoption-img2 {
-    background: url(../img/adoption-img02.jpg) no-repeat center top;
-    left:10%;
+    background-image: url(../img/adoption-img02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
     height: 585px;
-    margin-bottom:0px;
 }
 .adoption-img3 {
-    background: url(../img/adoption-img03.jpg) no-repeat center top;
-    left:10%;
+    background-image: url(../img/adoption-img03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
     height: 585px;
-    margin-bottom:0px;
 }
