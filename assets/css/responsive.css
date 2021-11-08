@@ -382,9 +382,9 @@
     }
 }
 
-@media (max-width: 600px){
+@media (max-width: 630px){
 	.container {
-        width: 560px;
+        width: 590px;
     }
 
     .header-title {
