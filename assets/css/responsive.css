@@ -687,12 +687,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 15px;
+        padding-top: 5px;
     }
 
     .admin .footer-social .footer-social-list .footer-social-item a i {
         width: 1.5rem;
         height: 1.5rem;
-        font-size: 13px;
     }
 }
