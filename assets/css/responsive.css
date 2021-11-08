@@ -507,9 +507,9 @@
         width: 100px;
     }
 }
-@media (max-width: 400px){
+@media (max-width: 420px){
 	.container {
-        width: 360px;
+        width: 380px;
     }
 
     .quick a {
