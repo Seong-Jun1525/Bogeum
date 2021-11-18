@@ -94,6 +94,39 @@ footer .sub-container {
 }
 
 .login_contents div input {
+    box-sizing: border-box;
     padding: 10px;
     font-size: 25px;
+}
+
+.find_wrap {
+    padding: 24px 0 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.find_wrap li {
+    position: relative;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.find_wrap li+li::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 1px;
+    height: 13px;
+    border-radius: 0.5px;
+    background-color: lightgray;
+}
+
+.find_wrap .find_text {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration: none;
+    color: gray;
 }
