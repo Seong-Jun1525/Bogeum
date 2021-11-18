@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>보금자리 회원가입</title>
+
+     <!-- fonts -->
+    <link rel="stylesheet" href="../../assets/css/fontawesome.css">
+	<link rel="stylesheet" href="../../assets/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- //font -->
+
+    <!-- css -->
+    <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/common.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/quick.css">
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="container">
+            <div class="header-title">
+                <a href="../../index.html"><h1>보금자리보호소</h1></a>
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <main>
+        <div class="container">
+            <div class="form">
+                <form method="post">
+                    <div class="join_contents">
+                        <div class="memberName">
+                            <h3><label for="memberName">이름</label></h3>
+                            <span>
+                                <input type="text" id="memberName" name="memberName" maxlength="20" placeholder="이름">
+                            </span>
+                        </div>
+                        <div class="memberID">
+                            <h3><label for="memberID">ID</label></h3>
+                            <span>
+                                <input type="text" id="memberID" name="memberID" maxlength="20" placeholder="ID">
+                            </span>
+                        </div>
+                        <div class="memberPassword">
+                            <h3><label for="memberPassword">비밀번호</label></h3>
+                            <span>
+                                <input type="password" id="memberPassword" name="memberPassword" maxlength="20" placeholder="비밀번호">
+                            </span>
+                        </div>
+                        <div class="memberSex">
+                            <h3><label for="memberSex">성별</label></h3>
+                            <div class="ps_box gender_code">
+                                <select id="sex" name="sex" class="sel" aria-label="성별">
+                                    <option value="" selected>성별</option>
+                                        <option value="M">남자</option>
+                                        <option value="F">여자</option>
+                                        <option value="U">선택 안함</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="memberBirth">
+                            <h3><label for="memberBirth">생년월일</label></h3>
+                            <span>
+                                <input type="text" id="memberBirth" maxlength="20" name="memberBirth" placeholder="EX) 2000XXXX.">
+                            </span>
+                        </div>
+                        <div class="memberPhone">
+                            <h3><label for="memberPhone">휴대폰 번호</label></h3>
+                            <span>
+                                <input type="text" id="memberPhone" maxlength="20" name="memberPhone" placeholder="'-'없이 입력하세요">
+                            </span>
+                        </div>
+                        <div class="memberEmail">
+                            <h3><label for="memberEmail">Email</label></h3>
+                            <span>
+                                <input type="email" maxlength="20" id="EMAIL" name="memberEmail" placeholder="Email">
+                            </span>
+                        </div>
+                        <div class="address">
+                            <h3><label for="memberAddress">주소</label></h3>
+                            <span>
+                                <input type="text" id="memberAddress" name="memberAddress" maxlength="20" placeholder="주소">
+                            </span>
+                        </div>
+                        <div class="join_btn_area">
+                            <input type="submit" value="회원가입" class="join_btn">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <a href="javascript:void(0)">
+                    <h3>보금자리</h3>
+                </a>
+            </div>
+            <div class="footer-wrap">
+                <div class="sub-container">
+                    <div class="footer-menu menu01">
+                        <ul class="customer">
+                            <li><a href="javascript:void(0)"><span>Customer Center</span></a></li>
+                            <li><span>부평본점 24시 운영</span></li>
+                            <li><span>연중무휴 운영시간 pm 12:00 ~ pm 09:00</span></li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu menu02">
+                        <ul class="location">
+                            <li>인천 부평본점 24시</li>
+                        </ul>
+                    </div>
+                </div>
+                <p>&copy; 2021</p>
+            </div>
+        </div>
+    </footer>
+    <!-- //footer -->
+</body>
+</html>

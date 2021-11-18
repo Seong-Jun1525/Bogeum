@@ -1,0 +1,81 @@
+/* header */
+.header-title a h1 {
+    font-size: 35px;
+}
+
+/* main */
+main {
+}
+
+.form {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+.form form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(254, 255, 205);
+    background: rgb(250, 255, 223);
+    border-radius: 30%;
+}
+
+.join_contents div {
+    margin-bottom: 15px;
+}
+
+.join_contents h3 {
+    font-size: 15px;
+}
+
+.memberSex span label {
+    font-size: 20px;
+}
+
+input {
+    width: 100%;
+    font-size:20px;
+}
+select {
+    width: 100%;
+    font-size:20px;
+}
+input[type="radio"] {
+    margin-top: -1px;
+    vertical-align: middle;
+}
+
+/* footer */
+footer .footer-logo:before,
+footer .footer-logo:after {
+    content: "";
+    width: calc(33.333333% - 40px);
+    height: 1px;
+    background: goldenrod;
+    position: absolute;
+    display: block;
+    transform: scale(1,1);
+    top: 50%;
+}
+
+footer .sub-container {
+    display: block;
+    margin-bottom: 50px;
+}
+
+/* btn */
+.join_btn_area {
+    padding-top:30px;
+    padding-bottom:15px;
+}
+.join_btn {
+    width:300px;
+    height:45px;
+    background: yellow;
+    border:none;
+    font-size:25px;
+    color:black;
+}
