@@ -1,33 +1,32 @@
+/* Join */
 /* header */
 .header-title a h1 {
     font-size: 35px;
 }
 
 /* main */
-main {
-}
-
-.form {
+.area {
     width: 100%;
     box-sizing: border-box;
     padding: 30px;
     margin-bottom: 50px;
 }
 
-.form form {
+.area form {
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid rgb(254, 255, 205);
     background: rgb(250, 255, 223);
     border-radius: 30%;
+    padding: 30px;
 }
 
-.join_contents div {
+.contents div {
     margin-bottom: 15px;
 }
 
-.join_contents h3 {
+.contents h3 {
     font-size: 15px;
 }
 
@@ -67,15 +66,34 @@ footer .sub-container {
 }
 
 /* btn */
-.join_btn_area {
+.btn_area {
     padding-top:30px;
     padding-bottom:15px;
 }
-.join_btn {
-    width:300px;
-    height:45px;
+.btn {
     background: yellow;
     border:none;
     font-size:25px;
     color:black;
+}
+
+/* Login */
+.login_area {
+
+}
+
+.login_area form {
+    background: none;
+}
+
+.login_contents {
+    width: 80%;
+    padding: 10%;
+    box-sizing: border-box;
+    border: 1px solid gray;
+}
+
+.login_contents div input {
+    padding: 10px;
+    font-size: 25px;
 }
